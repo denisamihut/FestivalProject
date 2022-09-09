@@ -1,0 +1,171 @@
+body { 
+    background: url(../images/background.jpg) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.banner {
+	background-image:url(../images/banner.jpg);
+    background-color:black;
+    padding:10px;
+    text-align:center;
+    margin-top:0px;
+	opacity:0.9;
+}
+
+h1  {
+	 text-align:center;
+    margin-top: 0;
+    margin-bottom:0;
+    color:white; 
+    font-family: Courier New;
+}
+
+.text  {
+	background-color:white;
+	opacity:0.8;
+    text-align:center;
+
+}
+p {
+	color:black;
+	
+}
+nav.navbar {
+    overflow: hidden;
+    background-color: white;                                        
+    position: relative; 
+	left:2px;
+    top:0; 
+    opacity: 0.7;
+    text-align: center;
+}
+
+nav.navbar a {
+    display:inline-block;
+    color: black;                                                                         
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+nav.navbar a:hover {
+    background-color: #ddd;                                                                       
+    color: black;
+}
+
+nav.navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+
+.navbar a.current {
+background-color:gray;
+}
+
+
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+nav.footer {
+    overflow: hidden;
+    background-color: white;                                        
+    position: relative; 
+	left:2px;
+    bottom:0; 
+    width: 100%; 
+    opacity: 0.7;
+    text-align: center;
+}
+
+nav.footer a {
+    display:inline-block;
+    color: black;                                                                         
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+
+}
+
+nav.footer a:hover {
+    background-color: #ddd;                                                                       
+    color: black;
+}
+
+nav.footer a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+column {
+	 text-align: center;
+    padding: 2px 1px;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    background:black;
+    max-width:100%;
+    height:auto;
+}
+
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+
+nav.navbar a {
+   width: 25%;
+      float: left;
+  }
+  
+header {
+	
+	width:25%;
+ }
+
+text {
+	width:25%;
+	text-align:center;
+}
+
+nav.footer a {
+	width:25%;
+}
+column  {
+	width:25%;
+	float:left;
+	
+}
+}
+ @media (min-width: 400px) and (max-width: 599px) {
+
+
+nav.navbar a {
+    width: 100%;
+   float: left;
+  }
+  
+banner {
+	width:100%;
+	display:block;
+}
+
+
+text {
+	width:100%;
+
+}
+
+nav.footer a {
+	width:100%;
+	display:block;
+}
+column  {
+	width:100%;
+	float:left;
+	
+}
+ }
